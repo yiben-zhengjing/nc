@@ -65,6 +65,7 @@ func getLocalOutput() {
 func main() {
 
 	port = flag.Int("port", 8888, "port")
+	flag.Parse()
 	connectionStr = ":"
 	connectionStr += strconv.Itoa(*port)
 
